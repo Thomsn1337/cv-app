@@ -12,6 +12,7 @@
     grid-template-columns: [header-start sidebar-start] 18rem [sidebar-end content-start] 1fr [header-end content-end];
     grid-template-rows: [header-start sidebar-start] 10rem [header-end content-start] 1fr [sidebar-end content-end];
 }
+
 .cv-header {
     background: var(--color-header);
     grid-area: header-start / header-start / header-end / header-end;
@@ -55,11 +56,18 @@
     margin: 2rem 0;
 }
 
-.skills ul {
+.skills ul,
+.languages ul {
     margin: 0;
     padding: 0;
 }
 
-.skills li {
+.skills li,
+.languages li {
     margin-left: 1rem;
+}
+
+.skills p,
+.languages p {
+    margin-bottom: 0.5rem;
 }

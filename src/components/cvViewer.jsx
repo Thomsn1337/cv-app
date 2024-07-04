@@ -41,12 +41,32 @@ export default function CVViewer({ cvData }) {
                             <h3>Skills</h3>
                             <ul>
                                 {skills.map((skill, index) => {
-                                    console.log(skill);
                                     return (
                                         <li key={index}>
                                             <SkillInfo
                                                 name={skill.name}
                                                 rating={skill.rating}
+                                            />
+                                        </li>
+                                    );
+                                })}
+                            </ul>
+                        </section>
+                    </>
+                )}
+
+                {languages.length !== 0 && (
+                    <>
+                        <div className="separator"></div>
+                        <section className="languages">
+                            <h3>Languages</h3>
+                            <ul>
+                                {languages.map((language, index) => {
+                                    return (
+                                        <li key={index}>
+                                            <SkillInfo
+                                                name={language.name}
+                                                rating={language.rating}
                                             />
                                         </li>
                                     );
