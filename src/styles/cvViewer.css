@@ -1,0 +1,24 @@
+@import url("./globals.css");
+
+.cv-viewer {
+    box-sizing: border-box;
+    background: var(--color-base);
+    width: 210mm;
+    height: 297mm;
+    flex: 0 0 auto;
+    box-shadow: 1px 1px 8px black;
+
+    display: grid;
+    grid-template-columns: [header-start sidebar-start] 18rem [sidebar-end content-start] 1fr [header-end content-end];
+    grid-template-rows: [header-start sidebar-start] 10rem [header-end content-start] 1fr [sidebar-end content-end];
+}
+.cv-header {
+    background: var(--color-header);
+    grid-area: header-start / header-start / header-end / header-end;
+    z-index: 1;
+    align-self: end;
+    padding: 1rem 2rem;
+}
+.cv-side {
+    background: var(--color-sidebar);
+    grid-area: sidebar-start / sidebar-start / sidebar-end / sidebar-end;

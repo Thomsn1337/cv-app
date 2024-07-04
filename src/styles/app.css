@@ -1,0 +1,11 @@
+body {
+    padding: 0;
+    margin: 0;
+}
+
+#root {
+    padding: 1rem;
+    box-sizing: border-box;
+    display: flex;
+    place-content: center;
+}
