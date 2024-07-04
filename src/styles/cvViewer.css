@@ -19,6 +19,12 @@
     align-self: end;
     padding: 1rem 2rem;
 }
+.cv-header h1,
+.cv-header p {
+    text-align: right;
+    margin: 0;
+}
+
 .cv-side {
     background: var(--color-sidebar);
     grid-area: sidebar-start / sidebar-start / sidebar-end / sidebar-end;
