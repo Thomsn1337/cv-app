@@ -1,0 +1,25 @@
+@import url("./globals.css");
+
+.rating-bar {
+    height: 0.5rem;
+    width: 100%;
+    display: flex;
+    border: 1px solid var(--color-base);
+}
+
+.rating-bar > .rating-block {
+    height: 100%;
+    width: 20%;
+}
+
+.rating-bar > .rating-block:not(:first-child) {
+    border-left: 1px solid var(--color-base);
+}
+
+.rating-block.set {
+    background: var(--color-base);
+}
+
+.rating-bar > .rating-block.set:not(:first-child) {
+    border-left: 1px solid var(--color-sidebar);
+}

@@ -1,0 +1,28 @@
+.school-info {
+    margin-block: 1rem;
+}
+
+.school-info .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.school-info h3,
+.school-info p {
+    margin: 0;
+    padding: 0;
+}
+
+.school-info h3 {
+    font-weight: 500;
+    font-size: 1.05rem;
+}
+
+.school-info p {
+    font-size: 0.9rem;
+}
+
+.school-info .school-subject {
+    padding-left: 1rem;
+}

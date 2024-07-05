@@ -1,0 +1,30 @@
+.work-info {
+    margin-block: 1.5rem;
+}
+
+.work-info .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.work-info h3,
+.work-info p,
+.work-info ul {
+    margin: 0;
+    padding: 0;
+}
+
+.work-info h3 {
+    font-weight: 500;
+    font-size: 1.05rem;
+}
+
+.work-info p,
+.work-info li {
+    font-size: 0.9rem;
+}
+
+.work-info ul {
+    margin-left: 2rem;
+}

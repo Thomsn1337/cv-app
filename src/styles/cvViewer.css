@@ -1,0 +1,90 @@
+@import url("./globals.css");
+
+.cv-viewer {
+    box-sizing: border-box;
+    background: var(--color-base);
+    width: 210mm;
+    height: 297mm;
+    flex: 0 0 auto;
+    box-shadow: 1px 1px 8px black;
+
+    display: grid;
+    grid-template-columns: [header-start sidebar-start] 18rem [sidebar-end content-start] 1fr [header-end content-end];
+    grid-template-rows: [header-start sidebar-start] 10rem [header-end content-start] 1fr [sidebar-end content-end];
+}
+
+.cv-header {
+    background: var(--color-header);
+    grid-area: header-start / header-start / header-end / header-end;
+    z-index: 1;
+    align-self: end;
+    padding: 1rem 2rem;
+}
+
+.cv-header h1,
+.cv-header p {
+    text-align: right;
+    margin: 0;
+}
+
+.cv-side {
+    background: var(--color-sidebar);
+    grid-area: sidebar-start / sidebar-start / sidebar-end / sidebar-end;
+
+    padding-top: 12rem;
+    padding-inline: 2rem;
+    color: var(--color-base);
+}
+
+.general-info ul {
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 0;
+    margin: 0;
+}
+
+.general-info li {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+
+.cv-side .separator {
+    border: 1px solid var(--color-base);
+    margin: 2rem 0;
+}
+
+.skills ul,
+.languages ul {
+    margin: 0;
+    padding: 0;
+}
+
+.skills li,
+.languages li {
+    margin-left: 1rem;
+}
+
+.skills p,
+.languages p {
+    margin-bottom: 0.5rem;
+}
+
+.cv-content {
+    padding: 0 2rem;
+}
+
+.cv-content h2,
+.cv-content p {
+    margin: 0;
+}
+
+.cv-content section {
+    margin-block: 2rem;
+}
+
+.about p {
+    margin-top: 0.5rem;
+}
