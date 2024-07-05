@@ -2,6 +2,7 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import SkillInfo from "./skillInfo";
 import SchoolInfo from "./schoolInfo";
+import WorkInfo from "./workInfo";
 import "../styles/cvViewer.css";
 
 export default function CVViewer({ cvData }) {
@@ -86,6 +87,12 @@ export default function CVViewer({ cvData }) {
                     <h2>Education</h2>
                     {education.map((school, index) => (
                         <SchoolInfo school={school} key={index} />
+                    ))}
+                </section>
+                <section className="work">
+                    <h2>Work experience</h2>
+                    {experience.map((work, index) => (
+                        <WorkInfo work={work} key={index} />
                     ))}
                 </section>
             </div>
