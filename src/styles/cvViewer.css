@@ -73,11 +73,16 @@
 }
 
 .cv-content {
-    padding: 2rem;
+    padding: 0 2rem;
 }
 
-.about h2 {
+.cv-content h2,
+.cv-content p {
     margin: 0;
+}
+
+.cv-content section {
+    margin-block: 2rem;
 }
 
 .about p {

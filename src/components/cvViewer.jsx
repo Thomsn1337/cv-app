@@ -1,6 +1,7 @@
 /* eslint-disable react/prop-types */
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import SkillInfo from "./skillInfo";
+import SchoolInfo from "./schoolInfo";
 import "../styles/cvViewer.css";
 
 export default function CVViewer({ cvData }) {
@@ -80,6 +81,12 @@ export default function CVViewer({ cvData }) {
                 <section className="about">
                     <h2>About me</h2>
                     <p>{general.about}</p>
+                </section>
+                <section className="education">
+                    <h2>Education</h2>
+                    {education.map((school, index) => (
+                        <SchoolInfo school={school} key={index} />
+                    ))}
                 </section>
             </div>
         </div>
