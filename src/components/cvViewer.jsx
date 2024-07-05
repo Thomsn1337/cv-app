@@ -76,7 +76,12 @@ export default function CVViewer({ cvData }) {
                     </>
                 )}
             </div>
-            <div className="cv-content"></div>
+            <div className="cv-content">
+                <section className="about">
+                    <h2>About me</h2>
+                    <p>{general.about}</p>
+                </section>
+            </div>
         </div>
     );
 }

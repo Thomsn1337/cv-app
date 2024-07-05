@@ -71,3 +71,15 @@
 .languages p {
     margin-bottom: 0.5rem;
 }
+
+.cv-content {
+    padding: 2rem;
+}
+
+.about h2 {
+    margin: 0;
+}
+
+.about p {
+    margin-top: 0.5rem;
+}
