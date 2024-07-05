@@ -1,5 +1,5 @@
 /* eslint-disable react/prop-types */
-import "../styles/skillInfo.css"
+import "../../styles/skillInfo.css"
 
 export default function SkillInfo({ name, rating }) {
     const ratingBlocks = new Array(5).fill(false);

@@ -1,8 +1,8 @@
 /* eslint-disable react/prop-types */
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import SkillInfo from "./skillInfo";
-import SchoolInfo from "./schoolInfo";
-import WorkInfo from "./workInfo";
+import SkillsetSection from "./cvViewer/skillsetSection";
+import SchoolInfo from "./cvViewer/schoolInfo";
+import WorkInfo from "./cvViewer/workInfo";
 import "../styles/cvViewer.css";
 
 export default function CVViewer({ cvData }) {
@@ -14,6 +14,7 @@ export default function CVViewer({ cvData }) {
                 <h1>{general.name}</h1>
                 <p>{general.title}</p>
             </div>
+
             <div className="cv-side">
                 <section className="general-info">
                     <ul>
@@ -36,48 +37,13 @@ export default function CVViewer({ cvData }) {
                     </ul>
                 </section>
 
-                {skills.length !== 0 && (
-                    <>
-                        <div className="separator"></div>
-                        <section className="skills">
-                            <h3>Skills</h3>
-                            <ul>
-                                {skills.map((skill, index) => {
-                                    return (
-                                        <li key={index}>
-                                            <SkillInfo
-                                                name={skill.name}
-                                                rating={skill.rating}
-                                            />
-                                        </li>
-                                    );
-                                })}
-                            </ul>
-                        </section>
-                    </>
-                )}
-
-                {languages.length !== 0 && (
-                    <>
-                        <div className="separator"></div>
-                        <section className="languages">
-                            <h3>Languages</h3>
-                            <ul>
-                                {languages.map((language, index) => {
-                                    return (
-                                        <li key={index}>
-                                            <SkillInfo
-                                                name={language.name}
-                                                rating={language.rating}
-                                            />
-                                        </li>
-                                    );
-                                })}
-                            </ul>
-                        </section>
-                    </>
-                )}
+                <SkillsetSection skillsetName={"Skills"} skillset={skills} />
+                <SkillsetSection
+                    skillsetName={"Languages"}
+                    skillset={languages}
+                />
             </div>
+
             <div className="cv-content">
                 <section className="about">
                     <h2>About me</h2>

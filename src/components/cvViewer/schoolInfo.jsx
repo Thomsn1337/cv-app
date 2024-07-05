@@ -1,5 +1,5 @@
 /* eslint-disable react/prop-types */
-import "../styles/schoolInfo.css";
+import "../../styles/schoolInfo.css";
 
 export default function SchoolInfo({ school }) {
     return (
