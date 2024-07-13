@@ -7,11 +7,13 @@ import { useState } from "react";
 import CVViewer from "./components/cvViewer";
 import exampleData from "./exampleData";
 import "./styles/app.css";
+import InputSection from "./components/inputSection";
 
 export default function App() {
     const [data, setData] = useState(exampleData);
     return (
         <>
+            <InputSection currentData={data} setData={setData} />
             <CVViewer cvData={data} />
         </>
     );
