@@ -4,6 +4,31 @@ import "../../styles/form.css";
 
 export default function GeneralDataForm({ currentData, setData }) {
     function handleFormSubmit(e) {
+        e.preventDefault();
+
+        const data = new FormData(e.currentTarget);
+        const newData = {};
+
+        for (const pair of data.entries()) {
+            newData[pair[0]] = pair[1];
+        }
+
+        setData({
+            ...currentData,
+            general: {
+                firstName: newData.firstname,
+                lastName: newData.lastname,
+                dateOfBirth: newData.dateOfBirth,
+                location: newData.location,
+                phone: newData.phone,
+                email: newData.email,
+                title: newData.title,
+                about: newData.about,
+            },
+        });
+
+        console.log({ ...currentData });
+        console.log(newData);
     }
 
     return (
