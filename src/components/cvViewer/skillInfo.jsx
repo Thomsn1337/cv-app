@@ -11,11 +11,11 @@ export default function SkillInfo({ name, rating }) {
         <>
             <p>{name}</p>
             <div className="rating-bar">
-                {ratingBlocks.map((block) => {
+                {ratingBlocks.map((block, index) => {
                     return block ? (
-                        <div className="rating-block set"></div>
+                        <div key={index} className="rating-block set"></div>
                     ) : (
-                        <div className="rating-block"></div>
+                        <div key={index} className="rating-block"></div>
                     );
                 })}
             </div>

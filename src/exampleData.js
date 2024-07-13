@@ -2,9 +2,6 @@ const exampleData = {
     general: {
         firstName: "John",
         lastName: "Smith",
-        get name() {
-            return `${this.firstName} ${this.lastName}`;
-        },
         about: "I use vim, btw. While also using Arch, btw.",
         title: "Software Developer",
         phone: "+39 123 456 7890",

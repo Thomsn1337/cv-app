@@ -11,7 +11,9 @@ export default function CVViewer({ cvData }) {
     return (
         <div className="cv-viewer">
             <div className="cv-header">
-                <h1>{general.name}</h1>
+                <h1>
+                    {general.firstName} {general.lastName}
+                </h1>
                 <p>{general.title}</p>
             </div>
 
