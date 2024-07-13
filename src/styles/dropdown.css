@@ -1,0 +1,33 @@
+.dropdown {
+    width: 32rem;
+    padding: 1rem;
+    border: 1px solid black;
+    border-radius: 1rem;
+    height: max-content;
+
+    transition: height 0.3s;
+}
+
+.dropdown .header {
+    cursor: pointer;
+    border-bottom: 1px solid black;
+    width: 100%;
+    background: none;
+    border: none;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.dropdown .header svg {
+    font-size: 1rem;
+}
+
+.dropdown h2 {
+    margin: 0;
+}
+
+.content {
+    margin-top: 1rem;
+}

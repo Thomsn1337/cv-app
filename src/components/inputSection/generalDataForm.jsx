@@ -26,14 +26,10 @@ export default function GeneralDataForm({ currentData, setData }) {
                 about: newData.about,
             },
         });
-
-        console.log({ ...currentData });
-        console.log(newData);
     }
 
     return (
         <form action="#" onSubmit={handleFormSubmit}>
-            <h2>General information</h2>
             <div className="input-group">
                 <InputField
                     name="First name"
