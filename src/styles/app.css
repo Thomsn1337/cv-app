@@ -8,4 +8,5 @@ body {
     box-sizing: border-box;
     display: flex;
     place-content: center;
+    gap: 3rem;
 }
