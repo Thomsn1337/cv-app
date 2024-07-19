@@ -11,7 +11,7 @@ export default function SchoolInfo({ school }) {
                 </p>
             </div>
             <p className="school-subject">
-                Subject: {school.specialization}
+                Subject: {school.subject}
             </p>
         </div>
     );

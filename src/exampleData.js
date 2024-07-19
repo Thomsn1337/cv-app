@@ -12,7 +12,7 @@ const exampleData = {
     education: [
         {
             name: "Local Engineering School",
-            specialization: "Electronics",
+            subject: "Electronics",
             startYear: "2015",
             endYear: "2020",
         },
