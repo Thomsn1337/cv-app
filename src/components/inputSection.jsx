@@ -2,6 +2,7 @@
 import { useState } from "react";
 import Dropdown from "./dropdown";
 import GeneralDataForm from "./inputSection/generalDataForm";
+import EducationForm from "./inputSection/educationForm";
 
 export default function InputSection({ currentData, setData }) {
     const [activeField, setActiveField] = useState(null);
@@ -11,8 +12,15 @@ export default function InputSection({ currentData, setData }) {
             <Dropdown
                 title="General information"
                 isActive={activeField === 0}
-                onShow={() => setActiveField(activeField === null ? 0 : null)}>
+                onShow={() => setActiveField(activeField !== 0 ? 0 : null)}>
                 <GeneralDataForm currentData={currentData} setData={setData} />
+            </Dropdown>
+
+            <Dropdown
+                title="Education"
+                isActive={activeField === 1}
+                onShow={() => setActiveField(activeField !== 1 ? 1 : null)}>
+                <EducationForm />
             </Dropdown>
         </div>
     );
