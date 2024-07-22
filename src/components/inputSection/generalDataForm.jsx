@@ -15,16 +15,7 @@ export default function GeneralDataForm({ currentData, setData }) {
 
         setData({
             ...currentData,
-            general: {
-                firstName: newData.firstname,
-                lastName: newData.lastname,
-                dateOfBirth: newData.dateOfBirth,
-                location: newData.location,
-                phone: newData.phone,
-                email: newData.email,
-                title: newData.title,
-                about: newData.about,
-            },
+            general: newData
         });
     }
 
@@ -33,13 +24,13 @@ export default function GeneralDataForm({ currentData, setData }) {
             <div className="input-group">
                 <InputField
                     name="First name"
-                    id="firstname"
+                    id="firstName"
                     type="text"
                     startValue={currentData.general.firstName}
                 />
                 <InputField
                     name="Last name"
-                    id="lastname"
+                    id="lastName"
                     type="text"
                     startValue={currentData.general.lastName}
                 />
