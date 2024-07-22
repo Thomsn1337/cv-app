@@ -1,0 +1,44 @@
+.education-item {
+    border-block: 1px solid black;
+    display: flex;
+    justify-content: space-between;
+    place-items: center;
+    padding-block: 1rem;
+}
+
+.education-item form {
+    width: 100%;
+}
+
+.year-inputs {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+}
+
+.year-picker {
+    display: flex;
+    place-content: center;
+    gap: 1rem;
+}
+
+.education-item ul,
+.education-item li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    max-width: 35ch;
+    font-size: 0.9rem;
+}
+
+.education-item .buttons button {
+    margin-inline: 0.5rem;
+    width: 4rem;
+}
+
+.new-item {
+    margin-top: 1rem;
+}
