@@ -1,3 +1,5 @@
+import { v4 as uuidv4 } from "uuid";
+
 const exampleData = {
     general: {
         firstName: "John",
@@ -12,9 +14,17 @@ const exampleData = {
     education: [
         {
             name: "Local Engineering School",
+            id: uuidv4(),
             subject: "Electronics",
             startYear: "2015",
             endYear: "2020",
+        },
+        {
+            name: "Engineering School",
+            id: uuidv4(),
+            subject: "Data science",
+            startYear: "2012",
+            endYear: "2015",
         },
     ],
     experience: [
