@@ -15,7 +15,9 @@ export default function Dropdown({ title, isActive, onShow, children }) {
                     }
                 />
             </button>
-            {isActive && <div className="content">{children}</div>}
+            <div className={isActive ? "content active" : "content"}>
+                {children}
+            </div>
         </div>
     );
 }

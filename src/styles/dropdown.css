@@ -1,9 +1,14 @@
+.input-section {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
 .dropdown {
     width: 32rem;
     padding: 1rem;
     border: 1px solid black;
     border-radius: 1rem;
-    height: max-content;
 
     transition: height 0.3s;
 }
@@ -28,6 +33,12 @@
     margin: 0;
 }
 
-.content {
+.dropdown .content {
+    display: none;
+}
+
+.dropdown .content.active {
+    display: flex;
+    flex-direction: column;
     margin-top: 1rem;
 }
