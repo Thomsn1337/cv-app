@@ -1,0 +1,6 @@
+{
+    "useTabs": false,
+    "bracketSameLine": true,
+    "printWidth": 80,
+    "proseWrap": "always"
+}
