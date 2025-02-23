@@ -1,7 +1,7 @@
-import { HelloWorld } from "@components/HelloWorld"
+import { CvViewer } from "@components/CvViewer"
 
 import "@styles/App.css"
 
 export default function App() {
-  return <HelloWorld />
+  return <CvViewer />
 }

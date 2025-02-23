@@ -1,0 +1,11 @@
+#cv-viewer {
+    aspect-ratio: 210 / 297;
+    height: 297mm;
+    box-shadow: 2px 2px 8px var(--text);
+}
+
+.sidebar {
+    width: 70mm;
+    height: 100%;
+    background-color: var(--blue);
+}
