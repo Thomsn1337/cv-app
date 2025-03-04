@@ -1,8 +1,14 @@
-import "@styles/cv-viewer.css"
+import { useCvContext } from "./CvContextProvider";
 
-export function CvViewer () {
-    return <div id="cv-viewer">
-        <div className="sidebar"></div>
-        <div className="main"></div>
+import "@styles/cv-viewer.css";
+
+export function CvViewer() {
+  const { data } = useCvContext();
+
+  return (
+    <div id="cv-viewer">
+      <div className="sidebar"></div>
+      <div className="main"></div>
     </div>
+  );
 }

@@ -1,7 +1,12 @@
-import { CvViewer } from "@components/CvViewer"
+import { CvViewer } from "@components/CvViewer";
+import { CvContextProvider } from "@components/CvContextProvider";
 
-import "@styles/App.css"
+import "@styles/App.css";
 
 export default function App() {
-  return <CvViewer />
+  return (
+    <CvContextProvider>
+      <CvViewer />
+    </CvContextProvider>
+  );
 }
