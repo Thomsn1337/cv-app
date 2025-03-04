@@ -1,11 +1,54 @@
 #cv-viewer {
-    aspect-ratio: 210 / 297;
-    height: 297mm;
-    box-shadow: 2px 2px 8px var(--text);
+  aspect-ratio: 210 / 297;
+  height: 297mm;
+  box-shadow: 2px 2px 8px var(--text);
+  display: flex;
 }
 
 .sidebar {
-    width: 70mm;
-    height: 100%;
-    background-color: var(--blue);
+  width: 80mm;
+  box-sizing: border-box;
+  background-color: var(--blue);
+  padding-inline: 1.8rem;
+}
+
+.picture {
+  max-width: 10rem;
+  aspect-ratio: 1;
+  background-color: white;
+  border-radius: 50%;
+  margin-inline: auto;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+
+.picture img {
+  width: 100%;
+  object-fit: cover;
+}
+
+.name {
+  text-align: center;
+}
+
+.sidebar h2 {
+  border-bottom: 2px solid var(--text);
+  text-align: center;
+}
+
+.section h2,
+.name p {
+  width: 100%;
+  padding-block: 0.5rem;
+}
+
+.section ul {
+  list-style-type: none;
+}
+
+.profile li {
+  display: flex;
+  align-items: center;
+  gap: 0.2rem;
+  margin-block: 0.5rem;
 }
